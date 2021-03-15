@@ -1,6 +1,5 @@
 <?php
-$url = str_replace("\n","",file_get_contents("url.txt"));
-$url = $url.'/student/'.(string)$argv[1];
+$url = 'https://student-rest.herokuapp.com/student/'.(string)$argv[1];
 $curl = curl_init($url);
 curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "DELETE");
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);

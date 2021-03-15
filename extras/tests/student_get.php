@@ -1,6 +1,5 @@
 <?php
-$url = str_replace("\n","",file_get_contents("url.txt"));
-$url = $url.'/student';
+$url = 'https://student-rest.herokuapp.com/student';
 if ($argc > 1) {
   $url = $url.'/'.(string)$argv[1];
 }

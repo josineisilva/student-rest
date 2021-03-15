@@ -1,6 +1,5 @@
 <?php
-$url = str_replace("\n","",file_get_contents("url.txt"));
-$url = $url.'/student/'.(string)$argv[1];
+$url = 'https://student-rest.herokuapp.com/student/'.(string)$argv[1];
 $data = array(
   "name" => "Nome alterado",
   "age" => "30",
